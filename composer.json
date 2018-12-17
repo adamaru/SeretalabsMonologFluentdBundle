@@ -1,11 +1,32 @@
 {
-    "name": "matrooskin/monolog-fluentd-bundle",
-    "description": "Simple wrapper bundle for Symfony2 that extends Monolog with Fluentd support",
-    "type": "bundle",
-    "authors": [{"name": "Alex Knol", "email": "alex@seretalabs.com"}],
+    "name": "adamaru/monolog-fluentd-bundle",
+    "description": "Symfony bundle defining a fluentd handler for monolog",
+    "homepage": "https://github.com/adamaru/monolog-fluentd-bundle",
+    "license": "MIT",
+    "type": "symfony-bundle",
+    "authors": [
+        {
+            "name": "Alex Knol",
+            "email": "alex@seretalabs.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Adam Bużko",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/adamaru/monolog-fluentd-bundle/issues",
+        "source": "https://github.com/adamaru/monolog-fluentd-bundle/releases/latest"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "sort-packages": true
+    },
     "require": {
-        "symfony/monolog-bundle": "*",
-        "fluent/logger": "0.3.*"
+        "php": "~7.0",
+        "fluent/logger": "~1.0",
+        "symfony/monolog-bundle": "~3.0"
     },
     "autoload": {
         "psr-0": {"Seretalabs\\MonologFluentdBundle\\": ""}
